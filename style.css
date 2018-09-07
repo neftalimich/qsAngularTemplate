@@ -1,0 +1,79 @@
+.qv-object-qsAngularTemplate div.qv-object-content-container {
+    overflow: auto;
+    font-family: QlikView Sans,sans-serif;
+    color: rgb(89, 89, 89);
+    line-height: 16px;
+}
+
+/* GENERAL */
+.qv-object-qsAngularTemplate .text-left {
+    text-align: left;
+}
+
+.qv-object-qsAngularTemplate .text-center {
+    text-align: center;
+}
+
+.qv-object-qsAngularTemplate .text-right {
+    text-align: right;
+}
+
+.qv-object-qsAngularTemplate .selected {
+    color: white;
+    background-color: rgb(134, 219, 134);
+    border: 2px solid rgb(82, 162, 204);
+}
+
+.qv-object-qsAngularTemplate .text-success {
+    color: rgb(0, 176, 80);
+}
+
+.qv-object-qsAngularTemplate .text-danger {
+    color: #f05555;
+}
+
+.qv-object-qsAngularTemplate .text-bold {
+    font-weight: bold;
+}
+
+.qv-object-qsAngularTemplate .text-italic {
+    font-style: italic;
+}
+/* GENERAL END */
+
+.qv-object-qsAngularTemplate td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    cursor: default;
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(244, 244, 244);
+    border-right: 1px solid rgb(244, 244, 244);
+}
+
+.qv-object-qsAngularTemplate th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    cursor: default;
+    font-size: 13px;
+    padding: 5px;
+    border-right: 1px inset rgb(244, 244, 244);
+}
+
+.qv-object-qsAngularTemplate thead > tr {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    border-top: 1px solid rgb(244, 244, 244);
+}
+
+.qv-object-qsAngularTemplate .totals {
+    border-bottom: 1px solid rgb(180, 180, 180) !important;
+}
+
+
+.qv-object-qsAngularTemplate .more {
+    width: 100%;
+}
