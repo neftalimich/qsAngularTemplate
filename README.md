@@ -1,2 +1,2 @@
 # qsAngularTemplate
-Qlik Sense Angular Template
+Qlik Sense Advanced Angular Template
