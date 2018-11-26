@@ -55,7 +55,7 @@ define([], function () {
                     columnSize: {
                         type: "string",
                         ref: "qDef.pColumnSize",
-                        label: "Column Size (px & %)",
+                        label: "Column Size",
                         defaultValue: ""
                     }
                 }
@@ -116,10 +116,10 @@ define([], function () {
                         defaultValue: 0
                     },
                     columnSize: {
-                        type: "number",
+                        type: "string",
                         ref: "qDef.pColumnSize",
                         label: "Column Size",
-                        defaultValue: 0
+                        defaultValue: ""
                     }
                 }
             },

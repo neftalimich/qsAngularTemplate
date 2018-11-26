@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th ng-repeat="head in table.headers track by $index"
-                    class="{{head.qMeasureInfo.pTextAlign}} {{head.qDimensionInfo.pTextAlign}}"
+                    class="{{head.qMeasureInfo.pTextAlign || head.qDimensionInfo.pTextAlign}}"
                     ng-click="head.orderBy();">
                     {{head.qFallbackTitle}}
                 </th>
@@ -20,7 +20,7 @@
         <tbody>
             <tr ng-repeat="row in table.rows track by $index" ng-init="$rowIndex = $index">
                 <td ng-repeat="cell in row.cells track by $index" ng-init="$colIndex = $index"
-                    class="selectable {{cell.qMeasureInfo.pTextAlign}} {{cell.qDimensionInfo.pTextAlign}} {{cell.qMeasureInfo.pTextClass}} {{cell.qDimensionInfo.pTextClass}}
+                    class="selectable {{cell.qMeasureInfo.pTextAlign || cell.qDimensionInfo.pTextAlign}} {{cell.qMeasureInfo.pTextClass || cell.qDimensionInfo.pTextClass}}
                     {{layout.qHyperCube.qDataPages[tableIndex[$rowIndex].page].qMatrix[tableIndex[$rowIndex].index][$colIndex].qAttrExps.qValues[0].qText}}"
                     ng-class="{'selected':cell.selected}">
                     <span ng-click="cell.select($event)">{{cell.qText}}</span>
